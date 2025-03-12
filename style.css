@@ -1,0 +1,102 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-image: linear-gradient(to right, #614385, #516395);
+  font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+  margin: auto;
+  margin-top: 5rem;
+  padding: 1px 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  align-items: center;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.inputTodo {
+  height: 2rem;
+  width: 100%;
+  font-family: cursive !important;
+}
+
+.btn {
+  height: 2.3rem;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.list {
+  padding: 0px;
+}
+
+.list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  border: 1px solid rgb(50, 50, 50);
+  margin-top: 1rem;
+  padding: 0px 5px;
+  background-color: rgb(242, 242, 242);
+  font-size: 12px;
+  font-family: cursive !important;
+}
+
+.hapus {
+  position: absolute;
+  height: 2.3rem;
+  right: 1px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.hapus:hover {
+  background-color: #614385;
+}
+
+/* Default (Mobile) */
+
+/* Tablet (≥ 600px) */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 0rem 1rem;
+  }
+}
+
+/* Laptop (≥ 768px) */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+    padding: 30px;
+  }
+}
+
+/* Desktop (≥ 1024px) */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+    padding: 40px;
+  }
+}
+
+/* Large Screen (≥ 1440px) */
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 22px;
+    padding: 50px;
+  }
+}
