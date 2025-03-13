@@ -7,17 +7,20 @@ body {
 
 .container {
   margin: auto;
-  margin-top: 5rem;
   padding: 1px 2rem;
-  display: flex;
-  flex-wrap: wrap;
   max-width: 500px;
   align-items: center;
-  color: black;
   background-color: white;
   border-radius: 10px;
   display: block;
   box-sizing: border-box;
+}
+
+.judul {
+  background: linear-gradient(to right, #804385, #2e3b5d);
+  background-clip: text; /* Properti standar */
+  -webkit-background-clip: text; /* Untuk kompatibilitas dengan browser berbasis WebKit */
+  -webkit-text-fill-color: transparent;
 }
 
 .form {
@@ -28,7 +31,8 @@ body {
 .inputTodo {
   height: 2rem;
   width: 100%;
-  font-family: cursive !important;
+  font-family: 'Funnel Display', sans-serif !important;
+  font-family: 25px;
 }
 
 .btn {
@@ -50,8 +54,8 @@ body {
   margin-top: 1rem;
   padding: 0px 5px;
   background-color: rgb(242, 242, 242);
-  font-size: 12px;
-  font-family: cursive !important;
+  font-size: 13px;
+  font-family: 'Funnel Display', sans-serif !important;
 }
 
 .hapus {
@@ -67,21 +71,50 @@ body {
   background-color: #614385;
 }
 
-/* Default (Mobile) */
+/* Desain color */
+
+.containerColor {
+  width: fit-content;
+  margin: auto;
+  margin-top: 7rem;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(181, 181, 179);
+  justify-content: center;
+}
+
+.box {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: lighter;
+  box-sizing: border-box;
+  transition: 0.3s;
+  color: white;
+  background-image: linear-gradient(to right, #804385, #2e3b5d);
+}
+
+.box:hover {
+  font-weight: bold;
+}
 
 /* Tablet (≥ 600px) */
 @media screen and (max-width: 600px) {
   body {
     font-size: 16px;
     padding: 0rem 1rem;
+    margin: 4rem 0rem;
   }
 }
 
 /* Laptop (≥ 768px) */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 601px) {
   body {
     font-size: 18px;
     padding: 30px;
+    /* margin: 5rem 0rem; */
   }
 }
 
